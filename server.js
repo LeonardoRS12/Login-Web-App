@@ -24,7 +24,7 @@ app.listen(PORT, async () => {
   try {
     await pool.connect();
     console.log(`Connected to the database`);
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on DATABASE_URL`);
   } catch (error) {
     console.error("Failed to connect to the database:", error);
     process.exit(1);
