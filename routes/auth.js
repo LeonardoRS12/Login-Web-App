@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 const pool = require("../config/db");
 const router = express.Router();
 
-const JWT_SECRET = process.env.JWT_SECRET || "your_secret_key";
+const JWT_SECRET = process.env.JWT_SECRET || "mydevelopmentkey123";
 
 // Register Endpoint
 router.post("/register", async (req, res) => {
